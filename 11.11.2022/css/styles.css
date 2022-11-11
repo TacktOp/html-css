@@ -1,0 +1,48 @@
+#wrapper {
+    width: 1100px;
+    margin: 10px auto;
+}
+
+
+#header{
+    top: 30px;
+}
+
+h1 span {
+    position: absolute;
+    top: 30px;
+    left: 200px;
+    font-size: 27px;
+    font-weight: bold;
+    color: black;
+}
+
+h2 span {
+    position: absolute;
+    top: 60px;
+    left: 230px;
+    font-size: 10px;
+    font-weight: bold;
+    color: black;
+}
+
+#left {
+    width: 199px;
+    height: 646px;
+    float: left;
+}
+
+#content {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+#footer {
+    width: 1098px;
+    height: 300px;
+    text-align: center;
+}
+
+p {
+    font-family: 'Sono', sans-serif;
+}
