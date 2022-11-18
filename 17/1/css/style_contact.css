@@ -163,3 +163,8 @@ footer p {
     background:#a7dbe4;
     padding:30px 15px
 }
+
+#map {
+    height: 400px;
+    width: 100%;
+  }
