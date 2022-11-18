@@ -163,3 +163,23 @@ footer p {
     background:#a7dbe4;
     padding:30px 15px
 }
+
+.gallery_image_left img{
+    float: left;
+    width: 420px;
+    border: 2px solid #55c5e9; 
+    padding: 10px;
+    background: #666;
+    margin-right: 10px; 
+    margin-bottom: 10px;
+}
+
+.gallery_image_rigth img{
+    float: right;
+    width: 420px;
+    border: 2px solid #55c5e9; 
+    padding: 10px;
+    background: #666;
+    margin-right: 10px; 
+    margin-bottom: 10px;
+}
