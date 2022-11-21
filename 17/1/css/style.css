@@ -10,13 +10,15 @@
 }
 
 body {
-    font-family: 'Josefin Sans', sans-serif;    color:#444;
-    background:#267f96
+    font-family: 'Josefin Sans', sans-serif;    
+    color:#444;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 4%, rgba(18,52,201,1) 48%, rgba(166,0,255,1) 100%);
 }
 
 a {
     text-decoration:none;
-    color:#267f96
+    color:rgb(87, 114, 233)
 }
 
 ul {
@@ -103,7 +105,7 @@ img {
 }
 
 .left__side h3 a {
-    color:#267f96
+    color:rgba(18,52,201,1)
 }
 
 .left__side .postmeta {
@@ -134,8 +136,8 @@ img {
     font-size:1.5em;
     line-height:2em;
     color:#FFF;
-    background:#062c3d;
-    border:1px solid #267f96
+    background:rgb(62, 36, 101);
+    border:1px solid rgb(183, 141, 241)
 }
 
 .box ul {
@@ -160,6 +162,19 @@ footer {
 }
 
 footer p {
-    background:#a7dbe4;
+    background:rgb(161, 178, 252);
     padding:30px 15px
+}
+
+.gallery img{
+    width:100%;
+    height:100%;
+    float: left;
+    width: 420px;
+    border: 2px solid rgb(161, 178, 252); 
+    padding: 10px;
+    background: #666;
+    margin-right: 10px; 
+    margin-left: 10px;
+    margin-bottom: 10px;
 }
