@@ -16,17 +16,87 @@
         <main>
         <nav>
             <ul>
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Help</a></li>
-                <li><a href="#">Contact</a></li>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="help.html">Help</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <figure>
-            <img src="images/img.jpg" alt="">
-        </figure>
+
+
+
+        
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+            
+            <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+
+                // Next/previous controls
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+
+                // Thumbnail image controls
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {
+                    slideIndex = 1
+                  }
+                  if (n < 1) {
+                    slideIndex = slides.length
+                  }
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex - 1].style.display = "block";
+                  dots[slideIndex - 1].className += " active";
+                }
+            </script>
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <!--<div class="numbertext">1 / 3</div>-->
+              <img src="img/pic1.jpg" style="width:100%">
+              <!--<div class="text">Caption Text</div>-->
+            </div>
+        
+            <div class="mySlides fade">
+              <img src="img/pic2.jpg" style="width:100%">
+            </div>
+        
+            <div class="mySlides fade">
+              <img src="img/pic3.jpg" style="width:100%">
+            </div>
+        
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+
+
+
+
         <section class="sidebar">
             <h3>Quisque luctus</h3>
             <ul>
@@ -40,7 +110,7 @@
             <h3>Integer rhoncus</h3>
             <div class="boxtxt">
                 <p>Mauris sollicitudin tincidunt magna vitae semper. Curabitur ut pharetra quam. Integer rhoncus convallis urna vitae mattis. Sed pharetra massa ac metus fermentum et iaculis enim accumsan.</p>
-            </div><!-- boxtxt -->
+            </div>
             <h3>Mauris sagittis</h3>
             <ul>
                 <li><a href="#">Vestibulum ante ipsum primis</a></li>
@@ -50,32 +120,30 @@
                 <li><a href="#">Integer non enim nec tellus</a></li>
                 <li><a href="#">Lobortis tempus vel nec lorem</a></li>
             </ul>
-        </section><!-- sidebar -->  
+        </section>
         <section class="content">			
             <div class="post">
                 <h3><a href="#">Terms of Use</a></h3>
-                <p class="postmeta">Posted in <a href="#">Class apent</a> | Sep 20, 2019 | <a href="#">4 comments</a></p>
                 <div class="entry">
                     <p>The template is released under <a href="#">Creative Commons Attribution</a> license. So you are free to use it for personal or commercial purposes, modify it or redistribute as long as you keep the link back to WebTemplateOcean.com in the footer.</p>
                     <p>Under no circumstances can you use the template for websites with illegal or immoral (even if legal) content. This includes, but is not limited to pornography, obscenity, homosexuality, abortion, violence, drugs, gambling.</p>
                     <p>The template contains a public domain image from <a href="#">PDPhoto.org</a>. Although public domain pictures are free and with no obligation to credit their authors you should keep in mind that in some cases they may infringe trademark, property or any other rights of others. Therefore, it is you who has to decide whether to use the image, especially if your website will be a commercial one.</p>
                     <p class="readmore"><a href="#">read more</a></p>
                 </div>
-            </div><!-- post -->	
+            </div>	
             <div class="post">
                 <h3><a href="#">Lorem ipsum dolor sit amet</a></h3>
-                <p class="postmeta">Posted in <a href="#">Lorem ipsum</a> | Sep 19, 2019 | <a href="#">2 comments</a></p>
                 <div class="entry">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec dui quis urna sollicitudin sodales. Fusce laoreet, ligula et rhoncus volutpat, felis magna varius tortor, ac molestie diam lorem in lectus. Aliquam venenatis mollis est, a porttitor ipsum interdum nec. Vestibulum sed risus ac nulla viverra pharetra.</p>
                     <p>Quisque congue lacus sed odio fermentum tincidunt. Proin vitae nulla velit. Cras consectetur commodo scelerisque. Curabitur leo nisl, blandit at tempus et, interdum at risus. Sed dui augue, pellentesque ac pulvinar id, malesuada eget diam. Integer elementum sem eget tortor faucibus id pellentesque lorem dignissim.</p>
                     <p class="readmore"><a href="#">read more</a></p>
                 </div>
-            </div><!-- post -->				              
-        </section><!-- content -->
+            </div>		              
+        </section>
         </main>                        
         <footer>
             <p>Copyright &copy; 2012, designed by <a href="#">WebTemplateOcean.com</a> | <a href="#">Privacy Policy</a></p>
         </footer>
-    </div><!-- page -->
+    </div>
 </body>
 </html>
