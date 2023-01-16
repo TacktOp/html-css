@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Bebas Neue', cursive;
+    background: #141414;
+}
+
+.header_wrap{
+    position: absolute;
+    width: 1920px;
+    height: 1000px;
+    background: url(../img/Rectangle_64.png);
+}
+.menu{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    margin-left: 100px;
+    font-weight: 500;
+}
+.menu li{
+    margin-left: 94px;
+}
+.menu li a{
+    color: white;
+    text-decoration: none;
+}
+
+.header_centre{
+    text-align: center;
+    margin-top: 250px;
+}
+.header_centre h1{
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 125%;
+    color: #DB3138;
+}
+.squares{
+    margin: auto;
+    display: flex;
+    list-style: none;
+}
+.squares li{
+    width: 10px;
+    height: 10px;
+    background: #DB3138;
+    transform: rotate(-45deg);
+    margin-left: 50px;
+}
+.header_centre h2{
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 120%;
+    color: white;
+}
+.button{
+    color: white;
+    text-decoration: none;
+}
