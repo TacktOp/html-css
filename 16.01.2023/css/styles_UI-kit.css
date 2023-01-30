@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Bebas Neue', cursive;
+    background: #141414;
+}
+
+.content{
+    position: absolute;
+    width: 1920px;
+    height: 1000px;
+    background: linear-gradient(
+        180deg, 
+        rgba(
+            20, 20, 20, 0.8
+            ) 78.8%,
+     #141414 100%
+     ), 
+     url(../img/Rectangle_64.png);
+}
+.header h1{
+    color: white;
+    margin-top: 73px;
+    margin-left: 164px;
+}
+
+
+
+.footer{
+    display: flex;
+    margin: 0 auto;
+}
+.footer h1{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.menu{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    font-weight: 500;
+}
+.menu li{
+    margin-left: 50px;
+}
+.menu li a{
+    color: white;
+    text-decoration: none;
+}

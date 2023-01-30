@@ -12,8 +12,14 @@ body{
     position: absolute;
     width: 1920px;
     height: 1000px;
-    background: url(../img/Rectangle_64.png);
-}
+    background: linear-gradient(
+        180deg, 
+        rgba(
+            20, 20, 20, 0.8
+            ) 78.8%,
+     #141414 100%
+     ), 
+     url(../img/Rectangle_64.png);}
 .menu{
     display: flex;
     list-style: none;

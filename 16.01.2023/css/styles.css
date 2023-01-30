@@ -12,7 +12,14 @@ body{
     position: absolute;
     width: 1920px;
     height: 1000px;
-    background: url(../img/Rectangle_64.png);
+    background: linear-gradient(
+        180deg, 
+        rgba(
+            20, 20, 20, 0.8
+            ) 78.8%,
+     #141414 100%
+     ), 
+     url(../img/Rectangle_64.png);
 }
 .menu{
     display: flex;
@@ -40,12 +47,12 @@ body{
     line-height: 125%;
     color: #DB3138;
 }
-.squares{
+.header_squares{
     display: flex;
     list-style: none;
     margin-left: 810px;
 }
-.squares li{
+.header_squares li{
     width: 10px;
     height: 10px;
     background: #DB3138;
@@ -59,10 +66,33 @@ body{
     color: white;
     padding: 30px;
 }
-.button{
+.header_button{
     color: white;
     text-decoration: none;
     background: #DB3138;
     padding: 5px 20px;
     font-size: 30px;
+}
+.header_down{
+    display: flex;
+    margin-top: 100px;
+}
+.header_down_text{
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid #898989;
+    padding: 43px 225px;
+}
+.header_down_text h1{
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 140%;
+}
+.header_down_text h2{
+    color: #DB3138;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    margin-top: 20px;
 }
