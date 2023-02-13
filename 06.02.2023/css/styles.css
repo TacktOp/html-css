@@ -14,24 +14,19 @@ body{
     box-sizing: border-box;
 }
 
-.header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px 15px;
-    box-sizing: border-box;   
-    max-width: 1080px;
-    margin: 0 auto;
-}
 .menu{
     display: flex;
     list-style: none;
     flex-wrap: wrap;
     font-size: 18px;
     line-height: 22px;  
+    padding: 30px 0px 30px 0px;
 }
 .menu li{
-    margin-right: 140px;
+    margin: 0 auto;
+}
+.menu li:last-child, .menu li:first-child{
+    margin: 0;
 }
 .menu li a{
     color: #828282;
@@ -64,6 +59,7 @@ body{
     line-height: 20px;
     color: #828282;
     transform: rotate(-90deg);
+    padding-top: 90px;
 }
 .lung a{
     text-decoration: none;
@@ -105,4 +101,106 @@ body{
     margin-top: 69px;
     font-size: 18px;
     line-height: 22px;
+}
+.programs{
+    display: flex;
+    padding-top: 100px;
+}
+.program{
+    margin: 0 auto;
+}
+.program h1{
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #828282;
+}
+.program img{
+    width: 50%;
+}
+.star{
+    margin-top: 40px;
+}
+
+.portfolio{
+    text-align: center;
+    margin-top: 220px;
+    background: #F6F6F6;
+    padding-bottom: 95px;
+}
+.portfolio h1{
+    padding-top: 100px;
+    font-size: 34px;
+    line-height: 42px;
+}
+.compane{
+    margin-top: 100px;
+}
+.compane img{
+    width: 100%;
+    margin-bottom: 45px;
+}
+.compane a{
+    display: block;
+    font-size: 18px;
+    line-height: 22px;
+    color: #070707;
+}
+
+.footer{
+    margin-top: 100px;
+    text-align: center;
+}
+.footer h1{
+    font-size: 34px;
+    line-height: 42px;
+}
+.footer h2{
+    padding-top: 20px;
+    padding-bottom: 40px;
+    font-size: 18px;
+    line-height: 22px;
+}
+.footer a{
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    background-color: #070707;
+    border: #070707 solid 10px;
+    border-radius: 25px;
+    padding: 1px 2px;
+    text-decoration: none;
+}
+.footer_icon{
+    margin-top: 100px;
+}
+.footer_icon img{
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 4%;
+}
+.footer h3{
+    font-size: 14px;
+    line-height: 17px;
+    color: #828282;
+    margin-top: 45px;
+    margin-bottom: 120px;
+}
+
+
+@media (max-width: 490px){
+    .footer_icon img{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media (max-width: 375px){
+    .me{
+        display: block;
+    }
+    .me h2{
+        margin-top: 10px;
+    }
 }
