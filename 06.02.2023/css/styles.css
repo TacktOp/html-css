@@ -35,9 +35,15 @@ body{
 .menu li a:hover{
     color: #070707;
 }
-.img img{
+.me_img_1{
     width: 100%;
     height: 100%;
+ }
+ .me_img_2{
+    display: none;
+ }
+ .line3{
+    display: none;
  }
 
 .me{
@@ -53,19 +59,23 @@ body{
     font-size: 18px;
     line-height: 22px;
 }
-.lung{
+.lang{
     display: flex;
     font-size: 16px;
     line-height: 20px;
     color: #828282;
     transform: rotate(-90deg);
-    padding-top: 90px;
+    height: 15px;
+    margin: auto 0;
 }
-.lung a{
+.lang a{
     text-decoration: none;
     color: #828282;;
 }
-.lung a:hover{
+.lang a:hover{
+    color: #070707;
+}
+.lang h3{
     color: #070707;
 }
 .me img{
@@ -197,10 +207,46 @@ body{
 }
 
 @media (max-width: 375px){
-    .me{
-        display: block;
-    }
     .me h2{
         margin-top: 10px;
+    }
+    .menu{
+        display: none;
+    }
+    .me{
+        display: block;
+        margin-left: 20px;
+        margin-top: 40px;
+    }
+    .lang{
+        display: none;
+    }
+    .me_img_1{
+        display: none;
+    }
+    .me_img_2{
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin-right: 20px;
+    }
+    .line3{
+        display: block;
+        position: absolute;
+        right: 0;
+        margin-right: 20px;
+    }
+
+    .programs{
+        display: grid;
+    }
+    .program{
+        margin-bottom: 40px;
+    }
+
+    .footer_icon img{
+        width: 9%;
+        padding-left: 25px;
+        padding-right: 25px;
     }
 }
