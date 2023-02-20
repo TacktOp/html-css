@@ -9,13 +9,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <title>Document</title>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+                // плавное перемещение страницы к нужному блоку
+                $("nav li a").click(function () {
+                    elementClick = $(this).attr("href");
+                    destination = $(elementClick).offset().top;
+                    $("body,html").animate({ scrollTop: destination }, 800);
+                });
+            });
+    </script>
 </head>
 <body>
     <section class="header_wrap">
         <div class="header wrap">
             <ul class="menu">
                 <li><a href="index_ru.html">Главная</a></li>
-                <li><a href="">Обо мне</a></li>
+                <li><a href="me_wrap">Обо мне</a></li>
                 <li><a href="">Навыки</a></li>
                 <li><a href="">Портфолио</a></li>
                 <li><a href="">Контакты</a></li>
