@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+/*
+.content {
+  margin: auto;
+  padding: 30px;
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box;
+}
+h3 {
+  background: #fff;
+  color: #3498db;
+  font-size: 36px;
+  line-height: 100px;
+  margin: 10px;
+  padding: 2%;
+  position: relative;
+  text-align: center;
+}
+*/
+.wrap{
+    max-width: 1440px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.container_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 27px;
+}
+.left_header{
+    display: flex;
+    align-items: center;
+    margin-top: 27px;
+    margin-left: 117px;
+}
+.left_header nav{
+    margin-left: 73px;
+}
+.menu{
+    display: flex;
+}
+.menu li{
+    list-style: none;
+    margin-left: 21px;
+    margin-right: 21px;
+}
+.menu a{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-shadow: 0px 0px 5px #E6E6E6;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    color: #697CA6;
+    text-decoration: none;
+}
+.menu a:hover{
+    color: #5E81FE;
+}
+.rigth_header{
+    margin-right: 117px;
+    margin-top: 19px;
+    display: flex;
+    align-items: center;
+}
+
+.button_header{
+    background: #D2E1FF;
+    color: #3A79FF;
+    border: #3498db;
+    padding: 13px 16px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    font-family: 'Quicksand', sans-serif;
+    margin-left: 44px;
+}
+.rigth_img_header{
+    margin-left: 33px;
+}
+
+.container_companies{
+    margin-left: 200px;
+    margin-bottom: 60px;
+}
+.container_companies a{
+    padding-left: 76px;
+}
+
+.footer{
+    margin-top: 434px;
+}
+.footer p{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.05em;
+    color: #AEB8D0;
+    margin-left: 217px;
+    margin-top: 42px;
+    margin-bottom: 90px;
+}
+
+.container_graph{
+    background-image: url(../img/heroimage.png);
+    background-size: cover;
+    width: 1440px;
+    height: 570px;
+    margin-bottom: 60px;
+}
+.container_graph p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #3D4F9F;
+    text-align: center;
+    padding-top: 92px;
+    padding-bottom: 16px;
+}
+.container_graph h1{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    color: #3D4F9F;
+    padding-bottom: 28px;
+}
+.container_graph h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #8D96BD;
+}
+
+.container_app{
+    display: flex;
+    background-color: #F5F8FF;
+}
+.left_app{
+    width: 413px;
+    margin: 0 auto;
+    padding-top: 208px;
+}
+.left_app p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #3D4F9F;
+    padding-bottom: 27px;
+}
+.left_app h2{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 45px;
+    color: #3D4F9F;
+    padding-bottom: 27px;
+}
+.left_app h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 29px;
+    letter-spacing: 0.03em;
+    color: #8D96BD;
+    padding-bottom: 47px;
+}
+.left_button_app{
+    display: flex;
+    align-items: center;
+}
+.left_button_app a{
+    text-decoration: none;
+}
+.left_button_app a:first-child{
+    color: #fff;
+    padding: 13px 25px;
+    background-color: #4C85FF;
+}
+.left_button_app a:last-child{
+    color: #ADB4D2;
+    padding: 13px 25px;
+    border: 1px solid #D1D1E4;
+}
+.rigth_app{
+    padding-top: 170px;
+}
